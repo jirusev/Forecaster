@@ -16,6 +16,7 @@ from PyQt5.QtWidgets import *
 
 
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if MainWindow.objectName():
@@ -207,17 +208,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.lblDay2 = QLabel(self.centralwidget)
-        self.lblDay2.setObjectName(u"lblDay2")
-        self.lblDay2.setAlignment(Qt.AlignCenter)
+        self.lblTime2 = QLabel(self.centralwidget)
+        self.lblTime2.setObjectName(u"lblTime2")
+        self.lblTime2.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_2.addWidget(self.lblDay2, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.lblTime2, 0, 1, 1, 1)
 
-        self.lblDay4 = QLabel(self.centralwidget)
-        self.lblDay4.setObjectName(u"lblDay4")
-        self.lblDay4.setAlignment(Qt.AlignCenter)
+        self.lblTime4 = QLabel(self.centralwidget)
+        self.lblTime4.setObjectName(u"lblTime4")
+        self.lblTime4.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_2.addWidget(self.lblDay4, 0, 3, 1, 1)
+        self.gridLayout_2.addWidget(self.lblTime4, 0, 3, 1, 1)
 
         self.lblIcon2 = QLabel(self.centralwidget)
         self.lblIcon2.setObjectName(u"lblIcon2")
@@ -233,11 +234,11 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.lblIcon2, 1, 1, 1, 1)
 
-        self.lblDay5 = QLabel(self.centralwidget)
-        self.lblDay5.setObjectName(u"lblDay5")
-        self.lblDay5.setAlignment(Qt.AlignCenter)
+        self.lblTime5 = QLabel(self.centralwidget)
+        self.lblTime5.setObjectName(u"lblTime5")
+        self.lblTime5.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_2.addWidget(self.lblDay5, 0, 4, 1, 1)
+        self.gridLayout_2.addWidget(self.lblTime5, 0, 4, 1, 1)
 
         self.lblTemp2 = QLabel(self.centralwidget)
         self.lblTemp2.setObjectName(u"lblTemp2")
@@ -268,17 +269,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.lblTemp1, 2, 0, 1, 1)
 
-        self.lblDay1 = QLabel(self.centralwidget)
-        self.lblDay1.setObjectName(u"lblDay1")
-        self.lblDay1.setAlignment(Qt.AlignCenter)
+        self.lblTime1 = QLabel(self.centralwidget)
+        self.lblTime1.setObjectName(u"lblTime1")
+        self.lblTime1.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_2.addWidget(self.lblDay1, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.lblTime1, 0, 0, 1, 1)
 
-        self.lblDay3 = QLabel(self.centralwidget)
-        self.lblDay3.setObjectName(u"lblDay3")
-        self.lblDay3.setAlignment(Qt.AlignCenter)
+        self.lblTime3 = QLabel(self.centralwidget)
+        self.lblTime3.setObjectName(u"lblTime3")
+        self.lblTime3.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_2.addWidget(self.lblDay3, 0, 2, 1, 1)
+        self.gridLayout_2.addWidget(self.lblTime3, 0, 2, 1, 1)
 
         self.lblIcon1 = QLabel(self.centralwidget)
         self.lblIcon1.setObjectName(u"lblIcon1")
@@ -366,22 +367,24 @@ class Ui_MainWindow(object):
         self.lblLatitude.setText("")
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Sunrise", None))
         self.lblSunrise.setText("")
-        self.lblDay2.setText("")
-        self.lblDay4.setText("")
+        self.lblTime2.setText("")
+        self.lblTime4.setText("")
         self.lblIcon2.setText("")
-        self.lblDay5.setText("")
+        self.lblTime5.setText("")
         self.lblTemp2.setText("")
         self.lblTemp4.setText("")
         self.lblIcon4.setText("")
         self.lblTemp1.setText("")
-        self.lblDay1.setText("")
-        self.lblDay3.setText("")
+        self.lblTime1.setText("")
+        self.lblTime3.setText("")
         self.lblIcon1.setText("")
         self.lblIcon3.setText("")
         self.lblIcon5.setText("")
         self.lblTemp3.setText("")
         self.lblTemp5.setText("")
     # retranslateUi
+
+
 
 
 

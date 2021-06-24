@@ -27,15 +27,18 @@ class ForecasterWorker(QRunnable):
 
     @pyqtSlot()
     def run(self):
-        """ run(self) """
-
+        """
+        run(self)
+        Make API calls
+        """
         try:
+            # Create data container, matching the api url fields names
             api_data = dict(
                 q=self._location,
                 appid=os.environ.get("FORECASTER_API_KEY")
             )
 
-            # Format the weatherUrl
+            # Format the weather_url
             weather_url = 'http://api.openweathermap.org/data/2.5/weather?%s&units=metric' % urlencode(api_data)
             response = requests.get(weather_url)
             weather_data = json.loads(response.text)
@@ -53,9 +56,11 @@ class ForecasterWorker(QRunnable):
             if not response.ok:
                 raise Exception(forecast_daily['message'])
 
+            # Emit the received data
             self.signals.result.emit(weather_data, forecast_daily_data)
 
         except Exception as e:
             self.signals.error.emit(str(e))
 
+        # Emit that the thread has finished
         self.signals.finished.emit()
